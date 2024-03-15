@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priti's Portfolio</title>
+    <link rel="stylesheet" href="style2.css" />
+    <script
+      src="https://kit.fontawesome.com/c4aceac792.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <i class="fa fa-times-circle-o icon" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa fa-bars icon" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- <img src="https://th.bing.com/th/id/OIP.SeX0JM0wBoqgpAAoZxdXUwHaFj?pid=ImgDet&rs=1"> -->
+
+          <h4>Hello!</h4>
+          <h1>I am Priti Gupta</h1>
+          <p>A Front-End Web Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!--------About Section -------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="User.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am passionate about designing and developing user-friendly and
+              visually appealing websites. I have a strong foundation in HTML,
+              CSS and JavaScript and I am constantly learning and exploring new
+              technologies to improve my skills. I am a quick learner and a team
+              player always willing to collaborate with others to achieve the
+              best results. I am excited to continue growing my career in web
+              development and contribute to the ever-evolving world of
+              technology.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2022</span>
+                  <br />Bachelor of Engineering <br />Information technology
+                </li>
+                <li>
+                  <span>2018</span>
+                  <br />Intermediate (Class XII),Science
+                </li>
+                <li>
+                  <span>2016</span>
+                  <br />Matriculation (Class X)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="hobbies">
+              <ul>
+                <li>Cooking</li>
+                <li>Listening to music</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------Skills section----------->
+
+    <div id="skill">
+      <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div id="skills-container">
+          <div class="items java">Java</div>
+          <div class="items dsa">Data Structure and Algorithms</div>
+          <div class="items mysql">MY SQL</div>
+          <div class="items html">HTML</div>
+          <div class="items css">CSS</div>
+          <div class="items js">Javascript</div>
+          <div class="items bs">BootStrap</div>
+          <div class="items react">React</div>
+        </div>
+      </div>
+    </div>
+    <!------------------Projects Section----------------->
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+
+        <div class="project-list">
+          <img src="./bewakoof.png" class="project-img" />
+          <p class="project-content">
+            The project aims to create a functional clone of Bewakoof's
+            e-commerce website, providing users with a similar shopping
+            experience to the original platform. By embarking on this project,
+            we will gain insights into the challenges and complexities of
+            developing an e-commerce platform, focusing on creating an intuitive
+            and visually appealing user interface.<br />
+            <italic
+              >Tech Stack Used: ReactJs, React Context API, React Router DOM,
+              React-Bootstrap, Material UI, Local Storage, Git/GitHub.</italic
+            >
+            <span class="icon">
+              <a href="https://bewakoof-clone-sigma.vercel.app/" target="_blank"
+                ><i class="fa fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/gupta-priti1/Bewakoof-Clone---React-project-1---4stjj1sb1x5a"
+                target="_blank"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </span>
+          </p>
+        </div>
+
+        <div class="project-list">
+          <img src="./linkedin.png" class="project-img" />
+          <p class="project-content">
+            The project aims to create a LinkedIn Clone application using HTML,
+            CSS, JavaScript, and React. The app will replicate the essential
+            features of LinkedIn, view posts, experience of other users, add
+            post, interact with the post, share experiences and post updates.<br />
+            <italic
+              >Tech Stack Used: ReactJs, React Context API, React Router DOM,
+              React Icons, Local Storage, Styled Components, Material UI,
+              Git/GitHub.</italic
+            >
+            <span class="icon">
+              <a href="https://linkedin-ten-eta.vercel.app/" target="_blank"
+                ><i class="fa fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/gupta-priti1/LinkedIn-Clone---React-Project-2---1fhep80v2b6x"
+                target="_blank"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </span>
+          </p>
+        </div>
+
+        <div class="project-list">
+          <img src="movie-booking-img.jpg" class="project-img" />
+          <p class="project-content">
+            Movie-Booking-App is a website that allows users to search for and
+            book movie tickets online. It provides a convenient and hassle-free
+            way for users to purchase tickets for their favorite movies. It is a
+            responsive and user-friendly website built using technologies like
+            HTML, CSS and JavaScript<br />
+            <italic>Tech Stack Used: HTML, CSS & JavaScript</italic>
+            <span class="icon">
+              <a
+                href="https://gupta-priti1.github.io/Movie-Booking-Application---Javascript-Project---uzhmcu7f8rnr/"
+                target="_blank"
+                ><i class="fa fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/gupta-priti1/Movie-Booking-Application---Javascript-Project---uzhmcu7f8rnr"
+                target="_blank"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </span>
+          </p>
+        </div>
+
+        <div class="project-list">
+          <img src="movie-deck.jpg" class="project-img" />
+          <p class="project-content">
+            Movie-Deck is a webpage designed for movie enthusiasts who want to
+            effortlessly discover, track, and enjoy their favorite films. With a
+            user-friendly interface and powerful features, Movie-Deck transforms
+            the way you explore the world of cinema.<br />
+            <italic>Tech Stack Used: HTML, CSS & JavaScript</italic>
+            <span class="icon">
+              <a
+                href="https://gupta-priti1.github.io/Movie-Deck-Project-Buidling---JS-Project-Building-Session-HTML-CSS---In-Cla---nx9ymbv7joot/"
+                target="_blank"
+                ><i class="fa fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/gupta-priti1/Movie-Deck-Project-Buidling---JS-Project-Building-Session-HTML-CSS---In-Cla---nx9ymbv7joot"
+                target="_blank"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!--------------------Contact section---------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>pritigupta161169@gmail.com <i class="fa fa-envelope"></i></p>
+            <p>7224055069 <i class="fa fa-phone"></i></p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/priti-gupta-40b71321a/"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+              <a
+                href="https://instagram.com/_priti.gupta_?igshid=ZDc4ODBmNjlmNQ=="
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/people/Priti-Gupta/pfbid02b522yNebcHVKkPzJuxXReV6GoQjAbiccGhe8zshqx6mmexwqeJZZPJiWETg9czSEl/?mibextid=ZbWKwL"
+                ><i class="fa fa-facebook-square"></i
+              ></a>
+              <a href="https://github.com/Priti201"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </div>
+
+            <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Priti</p>
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
